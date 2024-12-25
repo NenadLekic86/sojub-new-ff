@@ -1,0 +1,46 @@
+.btnGroup:hover .btnGroup-hover\:left-\[10px\] {
+  left: 10px;
+}
+
+.btnGroup:hover .btnGroup-hover\:top-\[4px\] {
+  top: 4px;
+}
+
+.btnGroup:hover .btnGroupTRC-hover\:scale-125,
+.btnGroup:hover .btnGroup-hover\:scale-125 {
+  transform: scale(1.25);
+}
+
+.btnGroup:hover .btnGroup-hover\:bottom-\[4px\] {
+  bottom: 4px;
+}
+
+.btnGroup:hover .btnGroup-hover\:right-\[10px\] {
+  right: 10px;
+}
+
+.btnGroup:hover .btnGroupT-hover\:scale-150 {
+  transform: scale(1.5);
+}
+
+.btnGroup:hover .btnGroupBL-hover\:scale-200,
+.btnGroup:hover .btnGroupRB-hover\:scale-200 {
+  transform: scale(2);
+}
+
+.btnGroup:hover .btnGroupT-hover\:left-\[30px\] {
+  left: 30px;
+}
+
+.btnGroup:hover .btnGroup-hover\:left-\[30px\] {
+  left: 30px;
+}
+
+.btnGroup:hover .btnGroup-hover\:bottom-\[10px\] {
+  bottom: 10px;
+}
+
+.transition-transform.duration-300 {
+  transition-property: transform;
+  transition-duration: 300ms;
+}

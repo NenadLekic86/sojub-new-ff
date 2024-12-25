@@ -1,0 +1,50 @@
+.navbar-items {
+  font-weight: 700;
+  font-size: 18px;
+}
+.navbar-items a:not(:last-child) {
+  margin-right: 24px;
+}
+.navbar .btn {
+  padding: 12px 29px 13px;
+}
+.footer svg,
+.navbar svg {
+  fill: #ffffff;
+}
+.footer-bottom svg {
+  fill: #000000;
+}
+.v-divider::before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 1px;
+  background-color: #ffffff;
+  top: -12px;
+  right: 0;
+}
+/* .navbar-items a::before,
+.navbar-items a::after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #AD89B1;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+.navbar-items a::before {
+  top: 0px;
+  transform: translateY(10px);
+}
+.navbar-items a::after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+.navbar-items a:hover::before,
+.navbar-items a:hover::after {
+  opacity: 1;
+  transform: translateY(0px);
+} */
