@@ -79,7 +79,7 @@ const RepMeme = () => {
         className='absolute top-0 left-0 w-full h-auto z-[3] object-cover lg:hidden'
       />
 
-      <div className='GigaChadContainer absolute top-32 left-0 w-full h-full min-h-[784px] z-[3] hidden lg:block'>
+      <div className='GigaChadContainer absolute top-32 left-0 w-full h-full min-h-[784px] z-[4] hidden lg:block'>
         <Image 
           src={GigaChadBg} 
           alt='Giga Chad Background' 
