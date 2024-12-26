@@ -128,6 +128,11 @@ body {
     position: relative;
   }
 
+  .shadowEffectScreenShots,
+  .shadowEffectHowItWorks,
+  .shadowEffectMmm,
+  .shadowEffectGearUp,
+  .shadowEffectOwn,
   .shadowEffect {
     position: absolute;
     top: 0;
@@ -148,6 +153,68 @@ body {
     color: transparent;
     display: inline-block;
   }
+  .shadowEffectOwn {
+    text-shadow:          
+    0 -1px 0 #F6C95B,       
+      -6px -3px 0 rgba(0, 0, 0, 1),
+      -6px 5px 0 rgba(0, 0, 0, 1), 
+      0px 4px 0 rgba(0, 0, 0, 0),
+      0 -5px 0 rgba(0, 0, 0, 1),
+      3px -2px 0 rgba(0, 0, 0, 1), 
+      0px 3px 0 rgba(0, 0, 0, 1);
+  }
+  .shadowEffectGearUp {
+    text-shadow:          
+    0 -1px 0 #6CE585,       
+      -6px -3px 0 rgba(0, 0, 0, 1),
+      -6px 5px 0 rgba(0, 0, 0, 1), 
+      0px 4px 0 rgba(0, 0, 0, 0),
+      0 -5px 0 rgba(0, 0, 0, 1),
+      3px -2px 0 rgba(0, 0, 0, 1), 
+      0px 3px 0 rgba(0, 0, 0, 1);
+  }
+  .shadowEffectMmm {
+    text-shadow:          
+    0 -1px 0 #F8C125,       
+      -6px -3px 0 rgba(0, 0, 0, 1),
+      -6px 5px 0 rgba(0, 0, 0, 1), 
+      0px 4px 0 rgba(0, 0, 0, 0),
+      0 -5px 0 rgba(0, 0, 0, 1),
+      3px -2px 0 rgba(0, 0, 0, 1), 
+      0px 3px 0 rgba(0, 0, 0, 1);
+  }
+  .shadowEffectHowItWorks {
+    text-shadow:          
+    0 -1px 0 #fff,       
+      -6px -3px 0 rgba(219, 56, 71, 1),
+      -6px 5px 0 rgba(219, 56, 71, 1), 
+      0px 4px 0 rgba(219, 56, 71, 0),
+      0 -5px 0 rgba(219, 56, 71, 1),
+      3px -2px 0 rgba(219, 56, 71, 1), 
+      0px 3px 0 rgba(219, 56, 71, 1);
+  }
+  .shadowEffectScreenShots {
+    text-shadow:          
+    0 -1px 0 #D0CD9A,       
+      -6px -3px 0 rgba(0, 0, 0, 1),
+      -6px 5px 0 rgba(0, 0, 0, 1), 
+      0px 4px 0 rgba(0, 0, 0, 0),
+      0 -5px 0 rgba(0, 0, 0, 1),
+      3px -2px 0 rgba(0, 0, 0, 1), 
+      0px 3px 0 rgba(0, 0, 0, 1);
+  }
+  .shadowEffectFooter {
+    text-shadow:          
+    0 -1px 0 #FFF18B,       
+      -6px -3px 0 rgba(0, 0, 0, 1),
+      -6px 5px 0 rgba(0, 0, 0, 1), 
+      0px 4px 0 rgba(0, 0, 0, 0),
+      0 -5px 0 rgba(0, 0, 0, 1),
+      3px -2px 0 rgba(0, 0, 0, 1), 
+      0px 3px 0 rgba(0, 0, 0, 1);
+  }
+  
+  
 
   /* .threeDEffect {
     position: relative;

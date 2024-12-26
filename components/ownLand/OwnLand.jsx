@@ -73,20 +73,20 @@ const OwnLand = () => {
       <Image 
         src={DogeSectionBg} 
         alt='Doge Section Background' 
-        className='dogeSectionBgBig absolute w-[100dvw] top-[5.4rem] right-0 z-[2] object-cover hidden lg:block'
+        className='dogeSectionBgBig absolute w-[100dvw] top-[5.4rem] right-0 z-[3] object-cover hidden lg:block'
       />
       <Image 
         src={DogeSectionBgTablet} 
         alt='Doge Section Background Tablet' 
-        className='absolute -top-8 left-16 w-full h-auto z-[2] object-cover hidden sm:block lg:hidden'
+        className='absolute -top-8 left-16 w-full h-auto z-[3] object-cover hidden sm:block lg:hidden'
       />
       <Image 
         src={DogeSectionBgMob} 
         alt='Doge Section Background Mobile' 
-        className='absolute top-0 left-0 w-full h-auto z-[2] object-cover lg:hidden'
+        className='absolute top-0 left-0 w-full h-auto z-[3] object-cover lg:hidden'
       />
 
-      <div className='DogeContainer absolute top-44 right-0 w-full h-full min-h-[851px] z-[2] hidden lg:block'>
+      <div className='DogeContainer absolute top-44 right-0 w-full h-full min-h-[851px] z-[3] hidden lg:block'>
         <Image 
           src={DogeBg} 
           alt='Doge Background' 
@@ -112,7 +112,7 @@ const OwnLand = () => {
                     className='absolute -top-[1.5rem] -left-28 lg:-left-20  w-[554px] md:w-[728px] max-w-[554px] md:max-w-[728px]'
                   />
                   <div className="relative w-full">
-                    <h2 ref={titleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] lg:pl-20 relative w-full z-[5]'>
+                    <h2 ref={titleRef} className='h2-heading yellowHeadingTwo text-[44px] md:text-[4.5rem] lg:pl-20 relative w-full z-[5]'>
                     {text.map((part, index) => (
                       typeof part === "string" ? (
                         part.split("").map((letter, letterIndex) => (
@@ -120,7 +120,7 @@ const OwnLand = () => {
                             key={`${index}-${letterIndex}`}
                             className="relative inline-block stackWrapper"
                           >
-                            <span className="absolute inset-0 shadowEffect">
+                            <span className="absolute inset-0 shadowEffectOwn">
                               {letter === " " ? "\u00A0" : letter}
                             </span>
                             <span className="relative threeDEffect">
@@ -145,12 +145,12 @@ const OwnLand = () => {
                   ref={dogeMobileRef}
                   src={Doge} 
                   alt='Doge' 
-                  className='relative w-[374px] sm:-right-40 max-w-[374px] z-[4] md:z-[3] opacity-0'
+                  className='relative w-[374px] sm:-right-40 max-w-[374px] z-[5] md:z-[4] opacity-0'
                 />
                 <Image 
                   src={DogeBgMob} 
                   alt='Doge Background' 
-                  className='absolute top-0 -right-4 sm:-right-56 lg:right-0 w-full min-w-[107vw] sm:min-w-[100%] z-[3] md:z-[2]'
+                  className='absolute top-0 -right-4 sm:-right-56 lg:right-0 w-full min-w-[107vw] sm:min-w-[100%] z-[4] md:z-[3]'
                 />
               </div>
             </div>

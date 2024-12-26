@@ -13,11 +13,11 @@ const Button = ({
   children,
 }) => {
   const btnClasses = 
-  `relative flex items-center justify-center bg-gradient-to-b from-[#FC7668] to-[#EB553A] shadow-inner overflow-hidden py-[12px] px-[22px] rounded-[10px]
+  `relative flex items-center justify-center bg-gradient-to-b from-[#FC7668] to-[#EB553A] shadow-inner shadow-custom-inset overflow-hidden py-[12px] px-[22px] rounded-[10px]
   `;
 
   const linkClasses =
-  `relative flex items-center justify-center bg-gradient-to-b from-[#FC7668] to-[#EB553A] shadow-inner overflow-hidden py-[12px] px-[22px] rounded-[10px]
+  `relative flex items-center justify-center bg-gradient-to-b from-[#FC7668] to-[#EB553A] shadow-inner shadow-custom-inset overflow-hidden py-[12px] px-[22px] rounded-[10px]
   `;
 
   const renderButton = () => (
@@ -29,7 +29,6 @@ const Button = ({
         id={id}
         className={btnClasses}
         onClick={onClick}
-        style={{ boxShadow: 'inset -1px 1px 0 0 #FFCCA4' }}
       >
         <div className='nav-btn'>
           {children}
@@ -59,7 +58,6 @@ const Button = ({
         id={id}
         href={href}
         className={linkClasses}
-        style={{ boxShadow: 'inset -1px 1px 0 0 #FFCCA4' }}
       >
         <div className='nav-btn'>
           {children}

@@ -81,7 +81,7 @@ const Footer = () => {
               alt='Memeland Mayhem logo'
               className='relative w-full max-w-[250px] mx-auto -mt-20 mb-8'
             />
-            <h2 ref={titleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] relative w-full z-[5]'>
+            <h2 ref={titleRef} className='h2-heading yellowHeadingTwo text-[44px] md:text-[4.5rem] relative w-full z-[5]'>
               {text.map((part, index) => (
                 typeof part === "string" ? (
                   part.split("").map((letter, letterIndex) => (
@@ -89,10 +89,10 @@ const Footer = () => {
                       key={`${index}-${letterIndex}`} 
                       className="relative inline-block stackWrapper"
                     >
-                      <span className="absolute inset-0 shadowEffect">
+                      <span className="absolute inset-0 shadowEffectFooter">
                         {letter === " " ? "\u00A0" : letter}
                       </span>
-                      <span className="relative threeDEffect">
+                      <span className="relative yellowHeadingTwo">
                         {letter === " " ? "\u00A0" : letter}
                       </span>
                     </span>

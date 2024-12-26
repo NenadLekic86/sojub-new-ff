@@ -33,15 +33,14 @@ const BulletHoles = () => {
   }, []);
 
   return (
-    <div className='relative w-full h-full'>
+    <div className='relative w-full h-full overflow-hidden'>
       {[BulletOne, BulletTwo, BulletThree, BulletFour].map((Bullet, index) => (
         <Image
           key={index}
           src={Bullet}
           alt={`Bullet ${index + 1}`}
           ref={el => bulletRefs.current[index] = el}
-          className='bullet'
-          style={{ position: 'absolute', opacity: 0, zIndex: 4 }}
+          className='absolute opacity-0 z-[4] bullet'
         />
       ))}
     </div>

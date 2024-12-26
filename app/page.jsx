@@ -10,7 +10,7 @@ import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative overflow-x-hidden">
       <Hero />
       <Trailer />
       <RepMeme />

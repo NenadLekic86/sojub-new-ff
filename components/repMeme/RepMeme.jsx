@@ -102,12 +102,12 @@ const RepMeme = () => {
                   ref={gigaChadMobileRef}
                   src={GigaChad} 
                   alt='Giga Chad' 
-                  className='GigaChadChar relative w-[444px] max-w-[444px] -top-[11px] sm:-top-[35px] z-[4] opacity-0'
+                  className='GigaChadChar relative w-[444px] max-w-[444px] -top-[11px] sm:-top-[35px] z-[5] opacity-0'
                 />
                 <Image 
                   src={GigaChadBg} 
                   alt='Giga Chad Background' 
-                  className='GigaChadCharBg absolute -top-[1.5rem] left-0 w-full min-w-[115vw] sm:min-w-[455px] z-[3]'
+                  className='GigaChadCharBg absolute -top-[1.5rem] left-0 w-full min-w-[115vw] sm:min-w-[455px] z-[4]'
                 />
               </div>
             </div>

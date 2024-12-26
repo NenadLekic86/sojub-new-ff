@@ -1,0 +1,16 @@
+.mask-container {
+  position: relative;
+  display: inline-block;
+  mask-image: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 50%, transparent 100%);
+}
+
+.crossLineTop,
+.crossLineBottom {
+  mask-image: inherit;
+  -webkit-mask-image: inherit;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}

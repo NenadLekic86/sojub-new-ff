@@ -87,7 +87,7 @@ const ScreenShots = () => {
                       key={`${index}-${letterIndex}`} 
                       className="relative inline-block stackWrapper"
                     >
-                      <span className="absolute inset-0 shadowEffect">
+                      <span className="absolute inset-0 shadowEffectScreenShots">
                         {letter === " " ? "\u00A0" : letter}
                       </span>
                       <span className="relative threeDEffect">

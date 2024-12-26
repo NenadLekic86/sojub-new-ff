@@ -10,6 +10,9 @@ import HowItWorksBg from '@/public/assets/images/howItWorksBg.webp'
 import HowItWorksBgMob from '@/public/assets/images/howItWorksBgMob.webp'
 import FlowChart from '@/public/assets/images/flowchart2.webp'
 import FlowChartBg from '@/public/assets/images/flowchartBg.webp'
+import HowItWorksTitleSplash from '@/public/assets/images/HowItWorksTitleSplash.webp'
+
+
 
 const HowItWorks = () => {
   const text = [
@@ -64,6 +67,11 @@ const HowItWorks = () => {
 
       <div className='container z-10'>
         <div className='relative z-[1] text-center'>
+          <Image 
+            src={HowItWorksTitleSplash}
+            alt='How It Works Title Splash'
+            className='splashTitle absolute -top-[1.5rem] sm:-top-[1.7rem] lg:-top-8 left-8 sm:left-32 lg:left-[21rem] w-full max-w-[341px] sm:max-w-[507px] z-[4]'
+          />
           <h2 ref={titleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] relative w-full z-[5]'>
             {text.map((part, index) => (
               typeof part === "string" ? (
@@ -72,7 +80,7 @@ const HowItWorks = () => {
                     key={`${index}-${letterIndex}`} 
                     className="relative inline-block stackWrapper"
                   >
-                    <span className="absolute inset-0 shadowEffect">
+                    <span className="absolute inset-0 shadowEffectHowItWorks">
                       {letter === " " ? "\u00A0" : letter}
                     </span>
                     <span className="relative threeDEffect">

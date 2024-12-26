@@ -1,18 +1,17 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { useGSAP } from "@gsap/react";
-
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
-
-import Image from 'next/image';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Image from 'next/image'
 import LogoBig from '@/public/assets/images/logo_big.webp'
+import RocksImg from '@/public/assets/images/RocksImg.webp'
+import BottomBigRocksMob from '@/public/assets/images/hero-rocks-mob.webp'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Hero = () => {
-  const logoRef = useRef(null);
+  const logoRef = useRef(null)
 
   useEffect(() => {
     // Define animations for different screen sizes
@@ -31,8 +30,25 @@ const Hero = () => {
           pin: true,
           // markers: true,
         },
-      });
-    });
+      })
+
+      // Apply animation for devices with a minimum width of 768px
+      gsap.set("#hero", {
+        clipPath: "polygon(14% 0px, 72% 0px, 100% 100%, -30px 100%)",
+        borderRadius: "0% 0% 40% 20%",
+      })
+      gsap.from("#hero", {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        borderRadius: "0% 0% 0% 0%",
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "center center",
+          end: "bottom center",
+          scrub: true,
+        },
+      })
+    })
 
     mm.add("(max-width: 767px)", () => {
       // Animation for mobile devices
@@ -48,38 +64,35 @@ const Hero = () => {
           // markers: true,
         },
       })
-    });
+    })
 
     return () => {
       // Cleanup matchMedia instances
       mm.revert()
     }
-  }, []);
-
-  useGSAP(() => {
-    gsap.set("#hero", {
-      clipPath: "polygon(14% 0px, 52% 0px, 98% 75%, 0px 100%)",
-      borderRadius: "0% 0% 40% 20%",
-    });
-    gsap.from("#hero", {
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      borderRadius: "0% 0% 0% 0%",
-      ease: "power1.inOut",
-      scrollTrigger: {
-        trigger: "#hero",
-        start: "center center",
-        end: "bottom center",
-        scrub: true,
-      },
-    });
-  });
+  }, [])
 
   return (
     <section 
       id='hero'
       className='hero relative flex items-center justify-center' 
-      
     >
+      <div className='rockImagesContainer absolute -bottom-[5px] left-0 w-full z-10'>
+        <div className='desktopRockImagesContainer relative bottom-0 hidden lg:block'>
+          <Image 
+            src={RocksImg}
+            alt='Rock Images'
+            className=''
+          />
+        </div>
+        <div className='mobileRockImagesContainer lg:hidden'>
+          <Image 
+            src={BottomBigRocksMob}
+            alt='Rock Images'
+            className='absolute bottom-0 w-full'
+          />
+        </div>
+      </div>
       <div className='flex flex-row items-center justify-center mb-96 lg:mb-44'>
         <Image 
           src={LogoBig} 

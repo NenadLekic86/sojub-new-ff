@@ -33,10 +33,12 @@ module.exports = {
         },
         red: {
           100: "#A62F2E",
+          200: "#DB3847",
         },
         yellow: {
           100: "#F6C95B",
           200: "#D0CD9A",
+          300: "#F8C125",
         },
         green: {
           100: "#6CE585",
@@ -50,6 +52,7 @@ module.exports = {
       backgroundImage: {
         'yellow-gradient': 'linear-gradient(to bottom, #EBE8B4 0%, #EBE8B4 60%, #D0CD9A 60%, #D0CD9A 100%)',
         'yellow-gradient-rev': 'linear-gradient(to top, #EBE8B4 0%, #EBE8B4 60%, #D0CD9A 60%, #D0CD9A 100%)',
+        'yellow-gradient-two': 'linear-gradient(to bottom, #FFF18B 0%, #FFF18B 50%, #FF9933 50%, #FF9933 100%)',
         'orange-gradient': 'linear-gradient(to bottom, #FD9125 0%, #FD9125 60%, #FD9125 60%, #FD9125 100%)',
         '3d-gradient': 'linear-gradient(to bottom, #ffffff 0%, #cccccc 100%)',
       },
@@ -58,6 +61,7 @@ module.exports = {
       },
       boxShadow: {
         solid: "2px 2px 0 #000",
+        'custom-inset': 'inset -1px 1px 0 0 #FFCCA4',
       },
     },
   },
@@ -73,6 +77,12 @@ module.exports = {
         ".yellowHeading": {
           "@apply bg-yellow-gradient bg-clip-text text-transparent": {},
           background: 'linear-gradient(to bottom, #EBE8B4 0%, #EBE8B4 60%, #D0CD9A 60%, #D0CD9A 100%)', // Fallback for older browsers
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+        },
+        ".yellowHeadingTwo": {
+          "@apply bg-yellow-gradient-two bg-clip-text text-transparent": {},
+          background: 'linear-gradient(to bottom, #FFF18B 0%, #FFF18B 50%, #FF9933 50%, #FF9933 100%)', // Fallback for older browsers
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
         },

@@ -9,6 +9,10 @@ import Image from 'next/image';
 import MMMBg from '@/public/assets/images/mmmBg.webp'
 import MMMCoin from '@/public/assets/images/$MMMCoin.svg'
 import MMMCoinBg from '@/public/assets/images/$MMMCoinBg-v2.svg'
+import MMMCrossLineTop from '@/public/assets/images/mmmCrossLineTop.svg'
+import MMMCrossLineBottom from '@/public/assets/images/mmmCrossLineBottom.svg'
+
+
 
 const Mmm = () => {
   const text = [
@@ -117,7 +121,7 @@ const Mmm = () => {
       <div className="container top-20 sm:top-60 lg:top-0 h-[1086px] z-[4]">
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center h-full">
           <div className="basis-full basis-1/2">
-            <div className='relative z-[1]'>
+            <div className='relative z-10'>
               <h2 ref={desktopTitleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] relative w-full z-[5] hidden lg:block'>
                 {text.map((part, index) => (
                   typeof part === "string" ? (
@@ -126,7 +130,7 @@ const Mmm = () => {
                         key={`${index}-${letterIndex}`} 
                         className="relative inline-block stackWrapper"
                       >
-                        <span className="absolute inset-0 shadowEffect">
+                        <span className="absolute inset-0 shadowEffectMmm">
                           {letter === " " ? "\u00A0" : letter}
                         </span>
                         <span className="relative threeDEffect">
@@ -152,7 +156,7 @@ const Mmm = () => {
                         key={`${index}-${letterIndex}`} 
                         className="relative inline-block stackWrapper"
                       >
-                        <span className="absolute inset-0 shadowEffect">
+                        <span className="absolute inset-0 shadowEffectMmm">
                           {letter === " " ? "\u00A0" : letter}
                         </span>
                         <span className="relative threeDEffect">

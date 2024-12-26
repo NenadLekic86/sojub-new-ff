@@ -81,7 +81,7 @@ const GearUp = () => {
       <Image 
         src={PonkeSectionBgMob} 
         alt='Ponke Background Mobile' 
-        className='absolute top-0 left-0 w-full h-auto z-[2] object-cover lg:hidden'
+        className='absolute top-0 left-0 w-full h-auto z-[3] object-cover lg:hidden'
       />
 
       <div className='PonkeContainer absolute -top-4 left-0 w-full h-full min-h-[841px] z-[4] hidden lg:block'>
@@ -133,7 +133,7 @@ const GearUp = () => {
                               key={`${index}-${letterIndex}`} 
                               className="relative inline-block stackWrapper"
                             >
-                              <span className="absolute inset-0 shadowEffect">
+                              <span className="absolute inset-0 shadowEffectGearUp">
                                 {letter === " " ? "\u00A0" : letter}
                               </span>
                               <span className="relative threeDEffect">
