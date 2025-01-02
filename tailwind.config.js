@@ -52,9 +52,10 @@ module.exports = {
       backgroundImage: {
         'yellow-gradient': 'linear-gradient(to bottom, #EBE8B4 0%, #EBE8B4 60%, #D0CD9A 60%, #D0CD9A 100%)',
         'yellow-gradient-rev': 'linear-gradient(to top, #EBE8B4 0%, #EBE8B4 60%, #D0CD9A 60%, #D0CD9A 100%)',
-        'yellow-gradient-two': 'linear-gradient(to bottom, #FFF18B 0%, #FFF18B 50%, #FF9933 50%, #FF9933 100%)',
+        'yellow-gradient-two': 'linear-gradient(to bottom, rgb(255, 241, 139) 0%, rgb(255, 241, 139) 50%, rgba(255, 153, 51, 0.4) 50%, rgb(255, 153, 51) 80%)',
         'orange-gradient': 'linear-gradient(to bottom, #FD9125 0%, #FD9125 60%, #FD9125 60%, #FD9125 100%)',
         '3d-gradient': 'linear-gradient(to bottom, #ffffff 0%, #cccccc 100%)',
+        'orange-gradient-mmm': 'linear-gradient(to bottom, rgba(248, 193, 37, 1) 0%, rgba(248, 193, 37, 1) 45%, rgba(253, 251, 106, 1) 55%, rgba(253, 251, 106, 0.3) 65%, rgba(248, 193, 37, 0.3) 75%, rgba(248, 193, 37, 1) 100%)',
       },
       screens: {
         '3xl': '1800px',
@@ -82,7 +83,13 @@ module.exports = {
         },
         ".yellowHeadingTwo": {
           "@apply bg-yellow-gradient-two bg-clip-text text-transparent": {},
-          background: 'linear-gradient(to bottom, #FFF18B 0%, #FFF18B 50%, #FF9933 50%, #FF9933 100%)', // Fallback for older browsers
+          background: 'linear-gradient(to bottom, rgb(255, 241, 139) 0%, rgb(255, 241, 139) 50%, rgba(255, 153, 51, 0.4) 50%, rgb(255, 153, 51) 80%)', // Fallback for older browsers
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent',
+        },
+        ".orangeHeadingMmm": {
+          "@apply bg-orange-gradient-mmm bg-clip-text text-transparent": {},
+          background: 'linear-gradient(to bottom, rgba(248, 193, 37, 1) 0%, rgba(248, 193, 37, 1) 45%, rgba(253, 251, 106, 1) 55%, rgba(253, 251, 106, 0.3) 65%, rgba(248, 193, 37, 0.3) 75%, rgba(248, 193, 37, 1) 100%)', // Fallback for older browsers
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent',
         },
@@ -104,6 +111,7 @@ module.exports = {
         ".yellowGradient": {
           "@apply bg-yellow-gradient bg-clip-text text-transparent": {},
         },
+        
       });
     }),
   ],

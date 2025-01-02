@@ -100,7 +100,7 @@ body {
   }
 
   .h2-heading {
-    @apply uppercase font-bangers leading-[120%] md:leading-[120%] mb-8 tracking-[0];
+    @apply uppercase font-bangers leading-[120%] md:leading-[120%] mb-8 tracking-[3px] lg:tracking-[0px];
   }
 
   .h2-shadow {
@@ -140,12 +140,27 @@ body {
     z-index: 1;
     text-shadow:          
     0 -1px 0 #FD9125,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
+      /* -6px -3px 0 rgba(0, 0, 0, 1),
       -6px 5px 0 rgba(0, 0, 0, 1), 
       0px 4px 0 rgba(0, 0, 0, 0),
       0 -5px 0 rgba(0, 0, 0, 1),
       3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+      0px 3px 0 rgba(0, 0, 0, 1); */
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   
     -webkit-background-clip: text;
     background-clip: text;
@@ -155,33 +170,61 @@ body {
   }
   .shadowEffectOwn {
     text-shadow:          
-    0 -1px 0 #F6C95B,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #F6C95B,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   }
   .shadowEffectGearUp {
     text-shadow:          
-    0 -1px 0 #6CE585,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #6CE585,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   }
   .shadowEffectMmm {
     text-shadow:          
-    0 -1px 0 #F8C125,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #F8C125,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
+    z-index: -1;
   }
   .shadowEffectHowItWorks {
     text-shadow:          
@@ -195,15 +238,24 @@ body {
   }
   .shadowEffectScreenShots {
     text-shadow:          
-    0 -1px 0 #D0CD9A,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #D0CD9A,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   }
-  .shadowEffectFooter {
+  /* .shadowEffectFooter {
     text-shadow:          
     0 -1px 0 #FFF18B,       
       -6px -3px 0 rgba(0, 0, 0, 1),
@@ -212,6 +264,24 @@ body {
       0 -5px 0 rgba(0, 0, 0, 1),
       3px -2px 0 rgba(0, 0, 0, 1), 
       0px 3px 0 rgba(0, 0, 0, 1);
+  } */
+  .shadowEffectFooter {
+    text-shadow: 
+    0 -2px 0 #FFF18B, 
+    1.5px -1.5px 0 rgb(0, 0, 0),
+    3px -3px 0 rgb(0, 0, 0),
+    -2px -2px 0 rgb(0, 0, 0),
+    -3px -3px 0 rgb(0, 0, 0),
+    -3px -3px 0 rgb(0, 0, 0),
+    1.5px 0 0 rgb(0, 0, 0),
+    1.5px 1.5px 0 rgb(0, 0, 0),
+    0 2px 0 rgb(0, 0, 0),
+    -1.5px 1.5px 0 rgb(0, 0, 0),
+    -1.5px 0 0 rgb(0, 0, 0),
+    -1.5px -1.5px 0 rgb(0, 0, 0),
+    0 2px 0 rgb(0, 0, 0),
+    0 -2px 0 rgb(0, 0, 0),
+    0 -3px 0 rgb(0, 0, 0);
   }
   
   

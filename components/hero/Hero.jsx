@@ -82,7 +82,7 @@ const Hero = () => {
           <Image 
             src={RocksImg}
             alt='Rock Images'
-            className=''
+            className='w-full'
           />
         </div>
         <div className='mobileRockImagesContainer lg:hidden'>

@@ -122,7 +122,7 @@ const Mmm = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center h-full">
           <div className="basis-full basis-1/2">
             <div className='relative z-10'>
-              <h2 ref={desktopTitleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] relative w-full z-[5] hidden lg:block'>
+              <h2 ref={desktopTitleRef} className='h2-heading orangeHeadingMmm text-[44px] md:text-[4.5rem] relative w-full z-[5] hidden lg:block'>
                 {text.map((part, index) => (
                   typeof part === "string" ? (
                     part.split("").map((letter, letterIndex) => (
@@ -133,7 +133,7 @@ const Mmm = () => {
                         <span className="absolute inset-0 shadowEffectMmm">
                           {letter === " " ? "\u00A0" : letter}
                         </span>
-                        <span className="relative threeDEffect">
+                        <span className="relative orangeHeadingMmm">
                           {letter === " " ? "\u00A0" : letter}
                         </span>
                       </span>
@@ -148,7 +148,7 @@ const Mmm = () => {
           </div>
           <div className="basis-full basis-1/2">
             <div className='relative z-[1] lg:hidden'>
-              <h2 ref={mobileTitleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] sm:-top-48 lg:top-0 relative w-full z-[5]'>
+              <h2 ref={mobileTitleRef} className='h2-heading orangeHeadingMmm text-[44px] md:text-[4.5rem] sm:-top-48 lg:top-0 relative w-full z-[5]'>
                 {text.map((part, index) => (
                   typeof part === "string" ? (
                     part.split("").map((letter, letterIndex) => (
@@ -159,7 +159,7 @@ const Mmm = () => {
                         <span className="absolute inset-0 shadowEffectMmm">
                           {letter === " " ? "\u00A0" : letter}
                         </span>
-                        <span className="relative threeDEffect">
+                        <span className="relative orangeHeadingMmm">
                           {letter === " " ? "\u00A0" : letter}
                         </span>
                       </span>

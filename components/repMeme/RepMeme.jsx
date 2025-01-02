@@ -111,7 +111,7 @@ const RepMeme = () => {
                 />
               </div>
             </div>
-            <div className='basis-full lg:basis-1/2 z-[3]'>
+            <div className='basis-full lg:basis-1/2 z-[7]'>
               <div className='relative flex items-center justify-start'>
                 <div className='relative flex items-center justify-start w-full top-0'>
                   <Image 

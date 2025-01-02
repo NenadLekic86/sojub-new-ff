@@ -21,6 +21,12 @@ const Footer = () => {
     "JOIN THE MAYHEM NOW"
   ];
 
+  const textMob = [
+    "JOIN THE ",
+    <br key="br1" />,
+    " MAYHEM NOW"
+  ];
+
   const titleRef = useRef(null);
   const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -81,7 +87,7 @@ const Footer = () => {
               alt='Memeland Mayhem logo'
               className='relative w-full max-w-[250px] mx-auto -mt-20 mb-8'
             />
-            <h2 ref={titleRef} className='h2-heading yellowHeadingTwo text-[44px] md:text-[4.5rem] relative w-full z-[5]'>
+            <h2 ref={titleRef} className='h2-heading yellowHeadingTwo text-[44px] md:text-[4.5rem] relative w-full z-[5] hidden lg:block'>
               {text.map((part, index) => (
                 typeof part === "string" ? (
                   part.split("").map((letter, letterIndex) => (
@@ -102,6 +108,29 @@ const Footer = () => {
                 )
               ))}
             </h2>
+
+            <h2 ref={titleRef} className='h2-heading yellowHeadingTwo text-[44px] md:text-[4.5rem] relative w-full z-[5] lg:hidden'>
+              {textMob.map((part, index) => (
+                typeof part === "string" ? (
+                  part.split("").map((letter, letterIndex) => (
+                    <span 
+                      key={`${index}-${letterIndex}`} 
+                      className="relative inline-block stackWrapper"
+                    >
+                      <span className="absolute inset-0 shadowEffectFooter">
+                        {letter === " " ? "\u00A0" : letter}
+                      </span>
+                      <span className="relative yellowHeadingTwo">
+                        {letter === " " ? "\u00A0" : letter}
+                      </span>
+                    </span>
+                  ))
+                ) : (
+                  part
+                )
+              ))}
+            </h2>
+
             <h3 className='h3-heading'>OUR SOCIALS</h3>
             <Links containerClass="justify-center fill-white !mt-2 !mb-6"/>
             <h3 className='h3-heading'>LAUNCHING ONLY ON PUMP.FUN</h3>

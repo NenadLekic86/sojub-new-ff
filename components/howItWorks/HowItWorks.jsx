@@ -72,7 +72,7 @@ const HowItWorks = () => {
             alt='How It Works Title Splash'
             className='splashTitle absolute -top-[1.5rem] sm:-top-[1.7rem] lg:-top-8 left-8 sm:left-32 lg:left-[21rem] w-full max-w-[341px] sm:max-w-[507px] z-[4]'
           />
-          <h2 ref={titleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] relative w-full z-[5]'>
+          <h2 ref={titleRef} className='h2-heading orangeHeading text-[44px] md:text-[4.5rem] relative w-full z-[5] !tracking-[5px]'>
             {text.map((part, index) => (
               typeof part === "string" ? (
                 part.split("").map((letter, letterIndex) => (

@@ -703,10 +703,18 @@ video {
   -webkit-text-fill-color: transparent;
 }
 .yellowHeadingTwo {
-  background-image: linear-gradient(to bottom, #FFF18B 0%, #FFF18B 50%, #FF9933 50%, #FF9933 100%);
+  background-image: linear-gradient(to bottom, rgb(255, 241, 139) 0%, rgb(255, 241, 139) 50%, rgba(255, 153, 51, 0.4) 50%, rgb(255, 153, 51) 80%);
   background-clip: text;
   color: transparent;
-  background: linear-gradient(to bottom, #FFF18B 0%, #FFF18B 50%, #FF9933 50%, #FF9933 100%);
+  background: linear-gradient(to bottom, rgb(255, 241, 139) 0%, rgb(255, 241, 139) 50%, rgba(255, 153, 51, 0.4) 50%, rgb(255, 153, 51) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.orangeHeadingMmm {
+  background-image: linear-gradient(to bottom, rgba(248, 193, 37, 1) 0%, rgba(248, 193, 37, 1) 45%, rgba(253, 251, 106, 1) 55%, rgba(253, 251, 106, 0.3) 65%, rgba(248, 193, 37, 0.3) 75%, rgba(248, 193, 37, 1) 100%);
+  background-clip: text;
+  color: transparent;
+  background: linear-gradient(to bottom, rgba(248, 193, 37, 1) 0%, rgba(248, 193, 37, 1) 45%, rgba(253, 251, 106, 1) 55%, rgba(253, 251, 106, 0.3) 65%, rgba(248, 193, 37, 0.3) 75%, rgba(248, 193, 37, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -937,6 +945,9 @@ video {
 }
 .z-\[5\] {
   z-index: 5;
+}
+.z-\[7\] {
+  z-index: 7;
 }
 .mx-6 {
   margin-left: 1.5rem;
@@ -1443,6 +1454,9 @@ video {
 .text-\[44px\] {
   font-size: 44px;
 }
+.\!tracking-\[5px\] {
+  letter-spacing: 5px !important;
+}
 .text-\[\#34313A\] {
   --tw-text-opacity: 1;
   color: rgb(52 49 58 / var(--tw-text-opacity, 1));
@@ -1548,12 +1562,18 @@ video {
   font-family: bangers, sans-serif;
   text-transform: uppercase;
   line-height: 120%;
-  letter-spacing: 0;
+  letter-spacing: 3px;
 }
 @media (min-width: 768px) {
 
   .h2-heading {
     line-height: 120%;
+  }
+}
+@media (min-width: 1024px) {
+
+  .h2-heading {
+    letter-spacing: 0px;
   }
 }
 .h2-shadow {
@@ -1624,12 +1644,27 @@ video {
     z-index: 1;
     text-shadow:          
     0 -1px 0 #FD9125,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
+      /* -6px -3px 0 rgba(0, 0, 0, 1),
       -6px 5px 0 rgba(0, 0, 0, 1), 
       0px 4px 0 rgba(0, 0, 0, 0),
       0 -5px 0 rgba(0, 0, 0, 1),
       3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+      0px 3px 0 rgba(0, 0, 0, 1); */
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   
     -webkit-background-clip: text;
     background-clip: text;
@@ -1639,33 +1674,61 @@ video {
   }
 .shadowEffectOwn {
     text-shadow:          
-    0 -1px 0 #F6C95B,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #F6C95B,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   }
 .shadowEffectGearUp {
     text-shadow:          
-    0 -1px 0 #6CE585,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #6CE585,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   }
 .shadowEffectMmm {
     text-shadow:          
-    0 -1px 0 #F8C125,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #F8C125,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
+    z-index: -1;
   }
 .shadowEffectHowItWorks {
     text-shadow:          
@@ -1679,15 +1742,24 @@ video {
   }
 .shadowEffectScreenShots {
     text-shadow:          
-    0 -1px 0 #D0CD9A,       
-      -6px -3px 0 rgba(0, 0, 0, 1),
-      -6px 5px 0 rgba(0, 0, 0, 1), 
-      0px 4px 0 rgba(0, 0, 0, 0),
-      0 -5px 0 rgba(0, 0, 0, 1),
-      3px -2px 0 rgba(0, 0, 0, 1), 
-      0px 3px 0 rgba(0, 0, 0, 1);
+    0 -1px 0 #D0CD9A,
+
+      1.5px -1.5px 0 rgb(0, 0, 0),
+      3px -3px 0 rgb(0, 0, 0),
+      -2px -2px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      -3px -3px 0 rgb(0, 0, 0),
+      1.5px 0 0 rgb(0, 0, 0),
+      1.5px 1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      -1.5px 1.5px 0 rgb(0, 0, 0),
+      -1.5px 0 0 rgb(0, 0, 0),
+      -1.5px -1.5px 0 rgb(0, 0, 0),
+      0 2px 0 rgb(0, 0, 0),
+      0 -2px 0 rgb(0, 0, 0),
+      0 -3px 0 rgb(0, 0, 0);
   }
-.shadowEffectFooter {
+/* .shadowEffectFooter {
     text-shadow:          
     0 -1px 0 #FFF18B,       
       -6px -3px 0 rgba(0, 0, 0, 1),
@@ -1696,6 +1768,24 @@ video {
       0 -5px 0 rgba(0, 0, 0, 1),
       3px -2px 0 rgba(0, 0, 0, 1), 
       0px 3px 0 rgba(0, 0, 0, 1);
+  } */
+.shadowEffectFooter {
+    text-shadow: 
+    0 -2px 0 #FFF18B, 
+    1.5px -1.5px 0 rgb(0, 0, 0),
+    3px -3px 0 rgb(0, 0, 0),
+    -2px -2px 0 rgb(0, 0, 0),
+    -3px -3px 0 rgb(0, 0, 0),
+    -3px -3px 0 rgb(0, 0, 0),
+    1.5px 0 0 rgb(0, 0, 0),
+    1.5px 1.5px 0 rgb(0, 0, 0),
+    0 2px 0 rgb(0, 0, 0),
+    -1.5px 1.5px 0 rgb(0, 0, 0),
+    -1.5px 0 0 rgb(0, 0, 0),
+    -1.5px -1.5px 0 rgb(0, 0, 0),
+    0 2px 0 rgb(0, 0, 0),
+    0 -2px 0 rgb(0, 0, 0),
+    0 -3px 0 rgb(0, 0, 0);
   }
 /* .threeDEffect {
     position: relative;
