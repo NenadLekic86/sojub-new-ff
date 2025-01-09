@@ -1092,6 +1092,9 @@ video {
 .min-h-\[890px\] {
   min-height: 890px;
 }
+.min-h-\[565px\] {
+  min-height: 565px;
+}
 .w-10 {
   width: 2.5rem;
 }

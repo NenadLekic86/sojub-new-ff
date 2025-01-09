@@ -4,6 +4,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { SiNotion } from "react-icons/si";
 import SocialInkTop from "../../svg/SocialInkTop";
 import SocialInkBottom from "../../svg/SocialInkBottom";
 
@@ -34,6 +35,11 @@ const Links = ({ containerClass, BlackWhite }) => {
       title: 'Twitter',
       path: '#',
       icon: <FaXTwitter className="text-white" />
+    },
+    {
+      title: 'Notion',
+      path: '#',
+      icon: <SiNotion  className="text-white" />
     },
   ];
 

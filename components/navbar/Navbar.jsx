@@ -49,10 +49,6 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* <ul className='hidden lg:flex'>
-            <Link className='btn text-[16px] rounded-[30px] text-[#34313A] hover:text-[#ffffff] bg-[#E7DBED] hover:bg-[#AD89B1] transition-all font-SegoeUISemiBold' href="#" alt="Connect Wallet">Buy Now</Link>
-          </ul> */}
-
           {/* Mobile Navigation Icon */}
           <div onClick={handleNav} className='block lg:hidden z-50 cursor-pointer'>
             {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -73,15 +69,12 @@ const Navbar = () => {
 
               {/* Mobile Navigation Items */}
               <Links />
-
-              <Link className='btn text-[16px] rounded-[30px] text-[#34313A] hover:text-[#ffffff] bg-[#E7DBED] hover:bg-[#AD89B1] transition-all relative z-10 font-SegoeUISemiBold' href="#" alt="Connect Wallet">Buy Now</Link>
-              {/* <li className='absolute bottom-0 left-0'>
-                <Image 
-                  src={BgMob}
-                  alt=""
-                  className="relative z-40"
-                />
-              </li> */}
+              <Button 
+                // href={'#'} 
+                containerClass=""
+              >
+                Buy now
+              </Button>
             </ul>
         </div>
       </div>

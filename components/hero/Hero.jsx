@@ -7,6 +7,7 @@ import Image from 'next/image'
 import LogoBig from '@/public/assets/images/logo_big.webp'
 import RocksImg from '@/public/assets/images/RocksImg.webp'
 import BottomBigRocksMob from '@/public/assets/images/hero-rocks-mob.webp'
+import Button from '@/components/button/Button';
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -93,13 +94,19 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className='flex flex-row items-center justify-center mb-96 lg:mb-44'>
+      <div className='flex flex-col items-center justify-center mb-96 lg:mb-44'>
         <Image 
           src={LogoBig} 
           alt="Logo Big" 
           className='logoBig max-w-[315px] lg:max-w-[600px]'
           ref={logoRef}
         />
+        {/* <Button 
+          // href={'#'} 
+          containerClass=""
+        >
+          Buy now
+        </Button> */}
       </div>
     </section>
   )

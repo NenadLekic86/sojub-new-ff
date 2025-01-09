@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import Links from '../navbar/links/Links';
+import Button from '@/components/button/Button';
 
 import Image from 'next/image';
 import FooterLogo from '@/public/assets/images/logo_footer.webp'
@@ -79,7 +80,8 @@ const Footer = () => {
           <Image
             src={FooterContentBg}
             alt='Footer Content Background'
-            className='absolute top-0 left-0 w-full z-[2] opacity-80 min-h-[495px] lg:min-h-full'
+            // className='absolute top-0 left-0 w-full z-[2] opacity-80 min-h-[495px] lg:min-h-full'
+            className='absolute top-0 left-0 w-full z-[2] opacity-80 min-h-[565px] lg:min-h-full'
           />
           <div className='text-center relative px-10 lg:px-0 z-[3]'>
             <Image
@@ -133,7 +135,13 @@ const Footer = () => {
 
             <h3 className='h3-heading'>OUR SOCIALS</h3>
             <Links containerClass="justify-center fill-white !mt-2 !mb-6"/>
-            <h3 className='h3-heading'>LAUNCHING ONLY ON PUMP.FUN</h3>
+            <Button 
+              // href={'#'} 
+              containerClass=""
+            >
+              Play now
+            </Button>
+            <h3 className='h3-heading mt-6'>LAUNCHING ONLY ON PUMP.FUN</h3>
           </div>
         </div>
       </div>
